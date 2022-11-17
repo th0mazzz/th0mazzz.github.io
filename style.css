@@ -1,0 +1,344 @@
+body {
+    background: rgb(238,224,174);
+    background: radial-gradient(circle, rgba(238,224,174,1) 0%, rgba(212,158,108,1) 100%);
+
+}
+
+hr {
+    border-color: black;
+}
+
+html {
+    font-family: arial;
+}
+
+div {
+    display: inline-block;
+}
+
+
+
+/* --------------------------- Divs CSS -- */
+.parent-div {
+    margin: 1rem;
+    padding: 2rem 2rem;
+    text-align: center;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.welcome-child-div {
+    display: inline-block;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+}
+
+.projects-child-div {
+    display: inline-block;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+}
+
+.header-div {
+    width: 100%;
+    text-align: center;
+}
+
+/* --------------------------- Nav Bar CSS -- */
+.navbar-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: rgb(207,188,122);
+    background: radial-gradient(circle, rgba(207,188,122,1) 0%, rgba(212,115,25,1) 100%);
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    left: 0;
+    width: 100%; /* Full width */
+
+}
+
+.navbar-li {
+    float: right;
+}
+
+
+.navbar-li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "verdana";
+  font-weight: bold;
+}
+
+.navbar-li a:hover {
+  background-color: #B87333;
+}
+
+/* --------------------------- Welcome Section  CSS -- */
+.portrait {
+  border-radius: 50%;
+  width: 200px;
+  border: 5px solid black;
+}
+
+.welcome-msg {
+    font-family:arial black;
+    font-size:3rem;
+    padding-bottom:0px;
+    margin-bottom:0px
+}
+
+.button {
+  background-color: #D27D2D;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: rem;
+  border-radius: 10%;
+}
+
+/* --------------------------- Who I Am CSS */
+.abt-me-gallery {
+    height: 250px;
+    border: 5px solid black;
+}
+
+.intro-para {
+    font-size: 1.5rem;
+    width: 80%;
+    margin: auto;
+}
+
+/* --------------------------- Projects Section -- */
+.img-thumbnail {
+    height:250px;
+    border:5px solid black;
+}
+
+#SteelBridge-proj:hover { transform: scale(1.2); }
+#subway-proj:hover { transform: scale(1.2); }
+#concrete-proj:hover { transform: scale(1.2); }
+#dams-proj:hover { transform: scale(1.2); }
+
+#proj-info-SteelBridge {
+  display: none;
+}
+#proj-info-subway {
+  display: none;
+}
+#proj-info-concrete {
+  display: none;
+}
+#proj-info-dams {
+  display: none;
+}
+
+.proj-info {
+    width: 80%;
+    margin: auto;
+}
+
+#SteelBridge-proj:hover ~ #proj-info-SteelBridge {
+  display: block;
+  color: red;
+}
+#subway-proj:hover ~ #proj-info-subway {
+  display: block;
+  color: red;
+}
+#concrete-proj:hover ~ #proj-info-concrete {
+  display: block;
+  color: red;
+}
+#dams-proj:hover ~ #proj-info-dams {
+  display: block;
+  color: red;
+}
+
+.proj-description {
+    font-family: arial;
+    font-size: 1rem;
+}
+
+
+/* --------------------------- Experience Section -- */
+
+/* Timeline Container */
+.timeline {
+    width: 40%;
+    white-space: nowrap;
+}
+
+.right-cards {
+    width: 45%;
+    padding-left: 0%;
+    /* border-left-style: solid;
+    border-left-width: 5px;
+    border-left-color: #333; */
+    margin-left: -4px;
+    min-width: 200px;
+    white-space: normal;
+}
+
+.left-cards {
+    width: 45%;
+    padding-right: 0%;
+    border-right-style: solid;
+    border-right-width: 5px;
+    border-right-color: #333;
+    margin-right: -5px;
+    min-width: 200px;
+    white-space: normal;
+}
+
+/* Outer Layer with the timeline border */
+
+
+/* Card container */
+.card-left {
+    position: static;
+    margin: 20px 20px 20px 20px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    background: #333;
+    color: gray;
+    border-radius: 8px;
+    max-width: 300px;
+    border-left: 2px solid #333;
+}
+.card-right {
+    position: static;
+    margin: 4px 20px 20px 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+    background: #333;
+    color: gray;
+    border-radius: 8px;
+    max-width: 300px;
+    border-right: 2px solid #333;
+}
+
+/* Information about the timeline */
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+/* Title of the card */
+.title-left {
+    color: orangered;
+    position: static;
+    margin: 0;
+}
+
+.title-left-blank {
+    color: orangered;
+    position: static;
+    margin: 0;
+}
+
+.title-right {
+    color: orangered;
+    position: static;
+    margin: 0;
+}
+.title-right-blank {
+    color: orangered;
+    position: static;
+    margin: 0;
+}
+
+.role-left {
+    color: orangered;
+    position: static;
+    margin: 0;
+}
+
+.role-right {
+    color: orangered;
+    position: static;
+}
+
+.title-left::after {
+    content: "";
+    float: right;
+    position: relative;
+    left: 35px;
+    width: 25px;
+    height: 10px;
+    background: #333;
+    border-radius: 1px;
+    border: 3px solid #333;
+}
+
+.title-right::before {
+    content: "";
+    float: left;
+    position: relative;
+    right: 30px;
+    /* bottom: 10px; */
+    width: 20px;
+    height: 10px;
+    background: #333;
+    border-radius: 1px;
+    border: 3px solid #333;
+}
+
+.experience-logo-left {
+    margin: auto;
+    max-width: 80%;
+    cursor: pointer;
+}
+
+.experience-logo-right {
+    margin: auto;
+    max-width: 80%;
+    cursor: pointer;
+}
+
+#experience-KimleyHorn:hover > .info > img{ animation: shake 0.5s; animation-iteration-count: infinite; }
+#experience-ClarkConstruction:hover > .info > img{ animation: shake 0.5s; animation-iteration-count: infinite; }
+#experience-Versed:hover > .info > img{ animation: shake 0.5s; animation-iteration-count: infinite; }
+#experience-CUProjectTeams:hover > .info > img{ animation: shake 0.5s; animation-iteration-count: infinite; }
+#experience-SteelBridge:hover > .info > img{ animation: shake 0.5s; animation-iteration-count: infinite; }
+#experience-NYPL:hover > .info > img{ animation: shake 0.5s; animation-iteration-count: infinite; }
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.card-description {
+    height: 100%;
+}
+
+.card-left .info:focus-within {
+    background: orange;
+}
+
+#hidden-div-KimleyHorn {
+    display: inline-block;
+    height: 100vh;
+    text-align: center;
+}
