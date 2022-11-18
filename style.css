@@ -10,6 +10,7 @@ hr {
 
 html {
     font-family: arial;
+    scroll-behavior: smooth;
 }
 
 div {
@@ -42,9 +43,17 @@ div {
     vertical-align: middle;
 }
 
+.education-child-div {
+    display: inline-block;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+    text-align: left;
+}
+
 .header-div {
     width: 100%;
     text-align: center;
+    text-decoration: underline;
 }
 
 /* --------------------------- Nav Bar CSS -- */
@@ -59,11 +68,13 @@ div {
     top: 0; /* Position the navbar at the top of the page */
     left: 0;
     width: 100%; /* Full width */
+    z-index: 100;
 
 }
 
 .navbar-li {
     float: right;
+    z-index: 100;
 }
 
 
@@ -176,6 +187,7 @@ div {
 /* Timeline Container */
 .timeline {
     width: 40%;
+    min-width: 400px;
     white-space: nowrap;
 }
 
@@ -337,8 +349,198 @@ div {
     background: orange;
 }
 
-#hidden-div-KimleyHorn {
+.experience-info {
+    position: sticky;
+    top: 100px;
+    border: 5px solid black;
+    min-width: 517px;
     display: inline-block;
-    height: 100vh;
+    vertical-align: top;
     text-align: center;
+    width: 55%;
+}
+
+.experience-placeholder {
+    position: sticky;
+    top: 100px;
+    border: 5px solid black;
+    min-width: 517px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    width: 55%;
+    padding: 0;
+}
+
+.info-title h3{
+    margin: 0px;
+}
+.info-body{
+    padding: 20px;
+    display: block;
+    text-align: left;
+}
+
+#hidden-div-KimleyHorn {    display: none;    }
+#hidden-div-CUProjectTeams {    display: none;    }
+#hidden-div-ClarkConstruction {    display: none;    }
+#hidden-div-SteelBridge {    display: none;    }
+#hidden-div-Versed {    display: none;    }
+#hidden-div-NYPL {    display: none;    }
+
+/* --------------------------- Experience Section -- */
+
+
+
+h2{
+    color:#000;
+    text-align:center;
+    font-size:2em;
+}
+.coursework{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tab{
+    cursor: pointer;
+    padding:10px 20px;
+    margin:0px 2px;
+    background:#000;
+    display:inline-block;
+    color:#fff;
+    border-radius:3px 3px 0px 0px;
+    box-shadow: 0 0.5rem 0.8rem #00000080;
+}
+.panels{
+    background:#fffffff6;
+    box-shadow: 0 2rem 2rem #00000080;
+    min-height:200px;
+    width:100%;
+    max-width:500px;
+    border-radius:3px;
+    overflow:hidden;
+    padding:20px;
+}
+.panel{
+    display:none;
+    animation: fadein .8s;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+.panel-title{
+    font-size:1.5em;
+    font-weight:bold
+}
+.radio{
+    display:none;
+}
+#one:checked ~ .panels #one-panel,
+#two:checked ~ .panels #two-panel,
+#three:checked ~ .panels #three-panel,
+#four:checked ~ .panels #four-panel{
+  display:block
+}
+#one:checked ~ .tabs #one-tab,
+#two:checked ~ .tabs #two-tab,
+#three:checked ~ .tabs #three-tab,
+#four:checked ~ .tabs #four-tab{
+    background:#fffffff6;
+    color:#000;
+    border-top: 3px solid #000;
+}
+
+/* CSS for carousel */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: auto;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
