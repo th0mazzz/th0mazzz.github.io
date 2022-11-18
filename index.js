@@ -102,31 +102,60 @@ card_NYPL.addEventListener('mouseout', function handleMouseOut() {
 });
 
 //--------------------------------------------------------------------------
-let slideIndex = 1;
-showSlides(slideIndex);
+let slideIndex_Cornell = 1;
+showCornellSlides(slideIndex_Cornell);
 
 // Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function plusCornellSlides(n_cornell) {
+  showCornellSlides(slideIndex_Cornell += n_cornell);
 }
 
 // Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function currentCornellSlide(n_cornell) {
+  showCornellSlides(slideIndex_Cornell = n_cornell);
 }
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+function showCornellSlides(n_cornell) {
+  let i_cornell;
+  let cornellslides = document.getElementsByClassName("myCornellSlides");
+  let cornelldots = document.getElementsByClassName("cornelldot");
+  if (n_cornell > cornellslides.length) {slideIndex_Cornell = 1}
+  if (n_cornell < 1) {slideIndex_Cornell = cornellslides.length}
+  for (i_cornell = 0; i_cornell < cornellslides.length; i_cornell++) {
+    cornellslides[i_cornell].style.display = "none";
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+  for (i_cornell = 0; i_cornell < cornelldots.length; i_cornell++) {
+    cornelldots[i_cornell].className = cornelldots[i_cornell].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+  cornellslides[slideIndex_Cornell-1].style.display = "block";
+  cornelldots[slideIndex_Cornell-1].className += " active";
+}
+//--------------------------------------------------------------------------
+let slideIndex_Stuy = 1;
+showStuySlides(slideIndex_Stuy);
+
+// Next/previous controls
+function plusStuySlides(n_stuy) {
+  showStuySlides(slideIndex_Stuy += n_stuy);
+}
+
+// Thumbnail image controls
+function currentStuySlide(n_stuy) {
+  showStuySlides(slideIndex_Stuy = n_stuy);
+}
+
+function showStuySlides(n_stuy) {
+  let i_stuy;
+  let stuyslides = document.getElementsByClassName("myStuySlides");
+  let stuydots = document.getElementsByClassName("stuydot");
+  if (n_stuy > stuyslides.length) {slideIndex_Stuy = 1}
+  if (n_stuy < 1) {slideIndex_Stuy = stuyslides.length}
+  for (i_stuy = 0; i_stuy < stuyslides.length; i_stuy++) {
+    stuyslides[i_stuy].style.display = "none";
+  }
+  for (i_stuy = 0; i_stuy < stuydots.length; i_stuy++) {
+    stuydots[i_stuy].className = stuydots[i_stuy].className.replace(" active", "");
+  }
+  stuyslides[slideIndex_Stuy-1].style.display = "block";
+  stuydots[slideIndex_Stuy-1].className += " active";
 }
