@@ -1,7 +1,10 @@
 body {
-    background: rgb(238,224,174);
-    background: radial-gradient(circle, rgba(238,224,174,1) 0%, rgba(212,158,108,1) 100%);
+    background: rgb(212,120,0);
+    background: linear-gradient(90deg, rgba(212,120,0,1) 0%, rgba(255,145,0,0.6054796918767507) 50%, rgba(212,120,0,1) 100%);
+    /* background: rgb(238,224,174); //different orange gradient
+    background: radial-gradient(circle, rgba(238,224,174,1) 0%, rgba(212,158,108,1) 100%); */
     text-align: center;
+    margin: 0px;
 }
 
 hr {
@@ -24,11 +27,9 @@ div {
     margin: 1rem;
     padding: 2rem 2rem;
     text-align: center;
-    width: 90%;
-    padding-left: 0px;
-    padding-right: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
 }
 
 .welcome-child-div {
@@ -57,14 +58,25 @@ div {
     text-decoration: underline;
 }
 
+#who-i-am, #experience, #contact {
+    background: rgb(16,24,32);
+    background: linear-gradient(90deg, rgba(16,24,32,1) 0%, rgba(16,24,32,0.7455357142857143) 50%, rgba(16,24,32,1) 100%);
+    color: #F2AA4CFF;
+}
+
+#experience {
+    padding: 0% 10%;
+}
+
 /* --------------------------- Nav Bar CSS -- */
 .navbar-ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background: rgb(207,188,122);
-    background: radial-gradient(circle, rgba(207,188,122,1) 0%, rgba(212,115,25,1) 100%);
+    background: #101820FF;
+    /* background: rgb(207,188,122); orange gradient
+    background: radial-gradient(circle, rgba(207,188,122,1) 0%, rgba(212,115,25,1) 100%); */
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     left: 0;
@@ -81,7 +93,8 @@ div {
 
 .navbar-li a {
   display: block;
-  color: black;
+  color: #F2AA4CFF;
+  /* color: black; */
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -98,7 +111,7 @@ div {
   border-radius: 50%;
   width: 200px;
   border: 5px solid black;
-  box-shadow: 0 2rem 2rem #00000080;
+  box-shadow: 0 10px 10px #00000080;
 }
 
 .welcome-msg {
@@ -115,6 +128,21 @@ div {
   border-radius: 5%;
 }
 
+#welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('./images/ThomasZhao_WeldingGrayscaleOpacity3.png');
+    background-size: cover;
+    /* border-bottom: 5px solid #101820FF; */
+}
+
+/* $bottom-border {
+    background: rgb(16,24,32);
+    background: linear-gradient(90deg, rgba(16,24,32,1) 0%, rgba(16,24,32,0.7455357142857143) 50%, rgba(16,24,32,1) 100%);
+} */
+
 #resumebutton:hover { transform: scale(1.2); }
 
 /* --------------------------- Who I Am CSS */
@@ -129,6 +157,8 @@ div {
     width: 80%;
     margin: auto;
 }
+
+
 
 /* --------------------------- Projects Section -- */
 .img-thumbnail {
