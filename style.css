@@ -98,31 +98,30 @@ div {
   border-radius: 50%;
   width: 200px;
   border: 5px solid black;
+  box-shadow: 0 2rem 2rem #00000080;
 }
 
 .welcome-msg {
     font-family:arial black;
     font-size:3rem;
     padding-bottom:0px;
+    margin-top:5%;
     margin-bottom:0px
 }
 
 .button {
-  background-color: #D27D2D;
   border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: rem;
-  border-radius: 10%;
+  box-shadow: 0 5px 5px #00000080;
+  border-radius: 5%;
 }
+
+#resumebutton:hover { transform: scale(1.2); }
 
 /* --------------------------- Who I Am CSS */
 .abt-me-gallery {
     height: 250px;
     border: 5px solid black;
+    box-shadow: 0 1rem 1rem #00000080;
 }
 
 .intro-para {
@@ -135,6 +134,7 @@ div {
 .img-thumbnail {
     height:250px;
     border:5px solid black;
+    box-shadow: 0 1rem 1rem #00000080;
 }
 
 #SteelBridge-proj:hover { transform: scale(1.2); }
@@ -481,6 +481,7 @@ h2{
   max-width: 1000px;
   position: relative;
   margin: auto;
+  box-shadow: 0 1rem 1rem #00000080;
 }
 
 /* Hide the images by default */
