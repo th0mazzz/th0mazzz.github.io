@@ -1,3 +1,84 @@
+const thumbnail_SteelBridge = document.getElementById('SteelBridge-proj');
+const hiddenDesc_SteelBridge = document.getElementById('proj-info-SteelBridge');
+// const blank = document.getElementById('resume');
+
+// Show hidden DIV on hover
+thumbnail_SteelBridge.addEventListener('mouseover', function handleMouseOver() {
+  hiddenDesc_SteelBridge.style.display = 'block';
+  console.log("hello");
+  // resume.style.display = 'none';
+
+});
+
+//  Hide DIV on mouse out
+thumbnail_SteelBridge.addEventListener('mouseout', function handleMouseOut() {
+  hiddenDesc_SteelBridge.style.display = 'none';
+  // resume.style.display = 'inline-block';
+});
+
+//--------------------------------------------------------------------------
+
+const thumbnail_subway = document.getElementById('subway-proj');
+const hiddenDesc_subway = document.getElementById('proj-info-subway');
+// const blank = document.getElementById('resume');
+
+// Show hidden DIV on hover
+thumbnail_subway.addEventListener('mouseover', function handleMouseOver() {
+  hiddenDesc_subway.style.display = 'block';
+  console.log("hello subway");
+  // resume.style.display = 'none';
+
+});
+
+//  Hide DIV on mouse out
+thumbnail_subway.addEventListener('mouseout', function handleMouseOut() {
+  hiddenDesc_subway.style.display = 'none';
+  // resume.style.display = 'inline-block';
+});
+
+//--------------------------------------------------------------------------
+
+const thumbnail_concrete = document.getElementById('concrete-proj');
+const hiddenDesc_concrete = document.getElementById('proj-info-concrete');
+// const blank = document.getElementById('resume');
+
+// Show hidden DIV on hover
+thumbnail_concrete.addEventListener('mouseover', function handleMouseOver() {
+  hiddenDesc_concrete.style.display = 'block';
+  console.log("hello conc");
+  // resume.style.display = 'none';
+
+});
+
+//  Hide DIV on mouse out
+thumbnail_concrete.addEventListener('mouseout', function handleMouseOut() {
+  hiddenDesc_concrete.style.display = 'none';
+  // resume.style.display = 'inline-block';
+});
+
+//--------------------------------------------------------------------------
+
+const thumbnail_dams = document.getElementById('dams-proj');
+const hiddenDesc_dams = document.getElementById('proj-info-dams');
+// const blank = document.getElementById('resume');
+
+// Show hidden DIV on hover
+thumbnail_dams.addEventListener('mouseover', function handleMouseOver() {
+  hiddenDesc_dams.style.display = 'block';
+  console.log("hello dam");
+  // resume.style.display = 'none';
+
+});
+
+//  Hide DIV on mouse out
+thumbnail_dams.addEventListener('mouseout', function handleMouseOut() {
+  hiddenDesc_dams.style.display = 'none';
+  // resume.style.display = 'inline-block';
+});
+
+//--------------------------------------------------------------------------
+
+
 const card_KimleyHorn = document.getElementById('experience-KimleyHorn');
 const hiddenDiv_KimleyHorn = document.getElementById('hidden-div-KimleyHorn');
 const resume = document.getElementById('resume');

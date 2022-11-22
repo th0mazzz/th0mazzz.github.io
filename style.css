@@ -190,7 +190,7 @@ div {
     margin: auto;
 }
 
-#SteelBridge-proj:hover ~ #proj-info-SteelBridge {
+/* #SteelBridge-proj:hover ~ #proj-info-SteelBridge {
   display: block;
   color: red;
 }
@@ -205,7 +205,7 @@ div {
 #dams-proj:hover ~ #proj-info-dams {
   display: block;
   color: red;
-}
+}*/
 
 .proj-description {
     font-family: arial;
