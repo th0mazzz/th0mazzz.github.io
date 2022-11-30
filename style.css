@@ -156,6 +156,7 @@ div {
     font-size: 1.5rem;
     width: 80%;
     margin: auto;
+    text-align: justify;
 }
 
 
@@ -238,7 +239,7 @@ div {
     padding-right: 0%;
     border-right-style: solid;
     border-right-width: 5px;
-    border-right-color: #333;
+    border-right-color: orange;
     margin-right: -5px;
     min-width: 200px;
     white-space: normal;
@@ -253,22 +254,22 @@ div {
     margin: 20px 20px 20px 20px;
     padding-right: 10px;
     padding-bottom: 10px;
-    background: #333;
+    background: orange;
     color: gray;
     border-radius: 8px;
     max-width: 300px;
-    border-left: 2px solid #333;
+    border-left: 2px solid orange;
 }
 .card-right {
     position: static;
     margin: 4px 20px 20px 20px;
     padding-left: 10px;
     padding-top: 10px;
-    background: #333;
+    background: orange;
     color: gray;
     border-radius: 8px;
     max-width: 300px;
-    border-right: 2px solid #333;
+    border-right: 2px solid orange;
 }
 
 /* Information about the timeline */
@@ -321,9 +322,9 @@ div {
     left: 35px;
     width: 25px;
     height: 10px;
-    background: #333;
+    background: orange;
     border-radius: 1px;
-    border: 3px solid #333;
+    border: 3px solid orange;
 }
 
 .title-right::before {
@@ -334,9 +335,9 @@ div {
     /* bottom: 10px; */
     width: 20px;
     height: 10px;
-    background: #333;
+    background: orange;
     border-radius: 1px;
-    border: 3px solid #333;
+    border: 3px solid orange;
 }
 
 .experience-logo-left {
@@ -389,6 +390,7 @@ div {
     vertical-align: top;
     text-align: center;
     width: 55%;
+    height: 650px;
 }
 
 .experience-placeholder {
@@ -401,6 +403,11 @@ div {
     text-align: center;
     width: 55%;
     padding: 0;
+}
+
+.info-title h2{
+    margin: 10px 0px 0px 0px;
+    color: #F2AA4CFF;
 }
 
 .info-title h3{
@@ -418,6 +425,15 @@ div {
 #hidden-div-SteelBridge {    display: none;    }
 #hidden-div-Versed {    display: none;    }
 #hidden-div-NYPL {    display: none;    }
+
+
+.exp-img{
+    width: 50%;
+    margin: auto;
+}
+
+
+
 
 /* --------------------------- Education Section -- */
 
@@ -599,4 +615,8 @@ h2{
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+.course-list{
+    text-align: left;
 }
