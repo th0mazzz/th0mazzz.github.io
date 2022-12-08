@@ -1,10 +1,12 @@
 const thumbnail_SteelBridge = document.getElementById('SteelBridge-proj');
 const hiddenDesc_SteelBridge = document.getElementById('proj-info-SteelBridge');
+const projDescPlaceholder = document.getElementById('proj-info-placeholder');
 // const blank = document.getElementById('resume');
 
 // Show hidden DIV on hover
 thumbnail_SteelBridge.addEventListener('mouseover', function handleMouseOver() {
   hiddenDesc_SteelBridge.style.display = 'block';
+  projDescPlaceholder.style.display = 'none';
   console.log("hello");
   // resume.style.display = 'none';
 
@@ -13,6 +15,7 @@ thumbnail_SteelBridge.addEventListener('mouseover', function handleMouseOver() {
 //  Hide DIV on mouse out
 thumbnail_SteelBridge.addEventListener('mouseout', function handleMouseOut() {
   hiddenDesc_SteelBridge.style.display = 'none';
+  projDescPlaceholder.style.display = 'block';
   // resume.style.display = 'inline-block';
 });
 
@@ -25,6 +28,7 @@ const hiddenDesc_subway = document.getElementById('proj-info-subway');
 // Show hidden DIV on hover
 thumbnail_subway.addEventListener('mouseover', function handleMouseOver() {
   hiddenDesc_subway.style.display = 'block';
+  projDescPlaceholder.style.display = 'none';
   console.log("hello subway");
   // resume.style.display = 'none';
 
@@ -33,6 +37,7 @@ thumbnail_subway.addEventListener('mouseover', function handleMouseOver() {
 //  Hide DIV on mouse out
 thumbnail_subway.addEventListener('mouseout', function handleMouseOut() {
   hiddenDesc_subway.style.display = 'none';
+  projDescPlaceholder.style.display = 'block';
   // resume.style.display = 'inline-block';
 });
 
@@ -45,6 +50,7 @@ const hiddenDesc_concrete = document.getElementById('proj-info-concrete');
 // Show hidden DIV on hover
 thumbnail_concrete.addEventListener('mouseover', function handleMouseOver() {
   hiddenDesc_concrete.style.display = 'block';
+  projDescPlaceholder.style.display = 'none';
   console.log("hello conc");
   // resume.style.display = 'none';
 
@@ -53,6 +59,7 @@ thumbnail_concrete.addEventListener('mouseover', function handleMouseOver() {
 //  Hide DIV on mouse out
 thumbnail_concrete.addEventListener('mouseout', function handleMouseOut() {
   hiddenDesc_concrete.style.display = 'none';
+  projDescPlaceholder.style.display = 'block';
   // resume.style.display = 'inline-block';
 });
 
@@ -65,6 +72,7 @@ const hiddenDesc_dams = document.getElementById('proj-info-dams');
 // Show hidden DIV on hover
 thumbnail_dams.addEventListener('mouseover', function handleMouseOver() {
   hiddenDesc_dams.style.display = 'block';
+  projDescPlaceholder.style.display = 'none';
   console.log("hello dam");
   // resume.style.display = 'none';
 
@@ -73,6 +81,7 @@ thumbnail_dams.addEventListener('mouseover', function handleMouseOver() {
 //  Hide DIV on mouse out
 thumbnail_dams.addEventListener('mouseout', function handleMouseOut() {
   hiddenDesc_dams.style.display = 'none';
+  projDescPlaceholder.style.display = 'block';
   // resume.style.display = 'inline-block';
 });
 
@@ -240,3 +249,7 @@ function showStuySlides(n_stuy) {
   stuyslides[slideIndex_Stuy-1].style.display = "block";
   stuydots[slideIndex_Stuy-1].className += " active";
 }
+
+//--------------------------------------------------------------------------
+
+// IMAGE ENLARGEMENT
