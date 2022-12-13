@@ -51,6 +51,7 @@ div {
     text-align: center;
     width: 100%;
     min-width: 1200px;
+    margin-bottom: 50px;
 }
 
 .header-div {
@@ -229,6 +230,7 @@ div {
     width: 40%;
     min-width: 400px;
     white-space: nowrap;
+    text-align: center;
 }
 
 .right-cards {
