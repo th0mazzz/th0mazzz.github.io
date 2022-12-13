@@ -404,7 +404,7 @@ div {
     vertical-align: top;
     text-align: center;
     width: 55%;
-    height: 650px;
+    height: 600px;
 }
 
 .experience-placeholder {
@@ -417,6 +417,7 @@ div {
     text-align: center;
     width: 55%;
     padding: 0;
+    margin-bottom: 5px;
 }
 
 .info-title h2{
@@ -444,6 +445,8 @@ div {
 .exp-img{
     width: 50%;
     margin: auto;
+    padding: 0px;
+    border: 2px solid black;
 }
 
 
