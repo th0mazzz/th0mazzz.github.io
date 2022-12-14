@@ -24,12 +24,10 @@ div {
 
 /* --------------------------- Divs CSS -- */
 .parent-div {
-    margin: 1rem;
-    padding: 2rem 2rem;
+    margin: 0;
+    padding: 2rem 0rem 0rem 0rem;
     text-align: center;
     width: 100%;
-    padding: 0px;
-    margin: 0px;
 }
 
 .welcome-child-div {
